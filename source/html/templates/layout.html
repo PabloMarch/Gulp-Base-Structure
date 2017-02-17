@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Gulp Base Structure</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{{assets_path}}/styles/app.css">
+  </head>
+  <body>
+    <!-- MAIN CONTENT -->
+    <div class="main-content container-fluid">
+      <header class="main-header row">
+        {% include "partials/header.html" %}
+      </header>
+
+      <section class="content row">
+        {% block content %} {% endblock %}
+      </section>
+
+      <!-- FOOTER -->
+      <footer class="main-footer row">
+        {% include "partials/footer.html" %}
+      </footer>
+    </div>
+    <script src="{{assets_path}}/scripts/app.js"></script>
+  </body>
+</html>
